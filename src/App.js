@@ -14,10 +14,10 @@ function App() {
     <div className="App">
       <h1>Color Scheme Switcher</h1>
       <p>Try clicking on one of the colors to change the background color on this page!</p>
-      <Form />
+      <Form setColor={setColor} />
       <ul id='switcher'>
         {color.map((element, index) => {
-          return <ColorList color={element} key={index} />
+          return <ColorList setCurrentBackgroundColor={setCurrentBackgroundColor} color={element} key={index} />
         })}
       </ul>
     </div>
