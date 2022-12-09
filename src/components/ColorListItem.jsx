@@ -1,9 +1,6 @@
-const ColorListItem = () => {
-    return (
-        <div>
-            ColorListItem Component            
-        </div>
-    );
+const ColorListItem = (props) => {
+    // JSX
+    return <li className={props.color}></li>
 };
 
 export default ColorListItem;
